@@ -9,18 +9,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kryx Labs Repair & Modernization</title>
 
-
-  <meta property="og:url"                content="https://www.kryxlabs.com" />
-  <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="Kryx Labs Repair & Modernization" />
-  <meta property="og:description"        content="Expert repair and modernization for your critical embedded and industrial systems." />
-  <meta property="og:image"              content="httsp://www.kryxlabs.com/images/KryxLong.png" />
-
+  <meta property="og:url" content="https://www.kryxlabs.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kryx Labs Repair & Modernization" />
+  <meta property="og:description" content="Expert repair and modernization for your critical embedded and industrial systems." />
+  <meta property="og:image" content="httsp://www.kryxlabs.com/images/KryxLong.png" />
 
   <script>
     if (location.hostname === "kryxlabs.com") {
       window.location.href = "https://www.kryxlabs.com";
-  }
+    }
   </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -105,12 +103,13 @@
 
   <section id="contact" class="max-w-4xl mx-auto px-4 py-12 animate-fade-in">
     <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-    <div class="bg-white p-6 rounded shadow space-y-2 max-w-xl mx-auto">
-      <p><strong>Email:</strong> <a href="mailto:gabriel.womelsdorf@kryxlabs.com" class="text-blue-600 underline">gabriel.womelsdorf@kryxlabs.com</a></p>
-      <p><strong>Phone:</strong> (410) 591-0511</p>
-      <p><strong>Website:</strong> <a href="http://www.kryxlabs.com" class="text-blue-600 underline">www.kryxlabs.com</a></p>
-      <p class="text-sm text-gray-500 mt-4">Feel free to reach out by email or phone with any questions or project inquiries! I'm a current college student and always looking for meaningful work to support local businesses and build experience. Located in Loudoun County — happy to work with fellow locals!</p>
-    </div>
+    <form method="POST" action="https://your-app-name.ondigitalocean.app/contact" class="bg-white p-6 rounded shadow max-w-xl mx-auto space-y-4">
+      <input name="name" type="text" required placeholder="Your Name" class="w-full p-2 border rounded" />
+      <input name="email" type="email" required placeholder="Your Email" class="w-full p-2 border rounded" />
+      <textarea name="message" required placeholder="Your Message" class="w-full p-2 border rounded h-32"></textarea>
+      <button type="submit" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded">Send Message</button>
+    </form>
+    <p class="text-sm text-gray-500 mt-6 text-center">Located in Loudoun County — happy to work with fellow locals!</p>
   </section>
 
   <footer class="bg-gray-900 text-white text-center py-6 animate-fade-in">
