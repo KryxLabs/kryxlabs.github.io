@@ -2,78 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kryx Labs Repair & Modernization</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #222; background: #f9f9f9; }
-    header, footer { background: #0f172a; color: white; padding: 1.5rem; text-align: center; }
-    nav a { margin: 0 1rem; color: white; text-decoration: none; }
-    section { padding: 2rem; max-width: 900px; margin: auto; }
-    h1, h2 { color: #1e293b; }
-    .cta { background: #334155; color: white; padding: 1rem; text-align: center; }
-    .cta a { background: #10b981; color: white; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; }
-    .service, .contact, .portfolio-entry { background: white; padding: 1rem; margin: 1rem 0; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 0.8s ease-out both;
+    }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Kryx Labs Repair & Modernization</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#why">Why Us</a>
-      <a href="#contact">Contact</a>
+<body class="bg-gray-50 text-gray-900 font-[IBM Plex Sans]">
+  <header class="bg-gray-900 text-white py-6 text-center animate-fade-in">
+    <h1 class="text-3xl font-bold">Kryx Labs Repair & Modernization</h1>
+    <nav class="mt-4 space-x-4">
+      <a href="#services" class="hover:underline">Services</a>
+      <a href="#portfolio" class="hover:underline">Portfolio</a>
+      <a href="#why" class="hover:underline">Why Us</a>
+      <a href="#contact" class="hover:underline">Contact</a>
     </nav>
   </header>
 
-  <section class="cta">
-    <h2>Reviving Legacy. Powering the Future.</h2>
-    <p>Expert repair and modernization for your critical embedded and industrial systems.</p>
-    <a href="#contact">Request a Diagnostic</a>
+  <section class="bg-gray-800 text-white py-12 text-center animate-fade-in">
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4">Reviving Legacy. Powering the Future.</h2>
+    <p class="mb-6">Expert repair and modernization for your critical embedded and industrial systems.</p>
+    <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 px-6 py-2 rounded text-white font-semibold">Request a Diagnostic</a>
   </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service">
-      <h3>Diagnostic / Bench Fee</h3>
-      <p>Flat-rate evaluation and troubleshooting of your equipment before repairs begin.</p>
-    </div>
-    <div class="service">
-      <h3>Hourly Repair</h3>
-      <p>Repair labor billed hourly after diagnostics, plus cost of parts.</p>
-    </div>
-    <div class="service">
-      <h3>Critical Hardware Tune-Up – $325</h3>
-      <ul>
-        <li>Inspect CPU, driver, sound, power boards</li>
-        <li>Recap up to 10 electrolytics</li>
-        <li>Socket up to 5 chips</li>
-        <li>Corrosion prevention & cleaning</li>
-        <li>Continuity checks</li>
-        <li>Service log included</li>
-      </ul>
-    </div>
-    <div class="service">
-      <h3>Fixed-Fee Modernization</h3>
-      <p>Complex overhauls with FPGAs, milestone-based pricing, and robust documentation.</p>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <h2>Project Portfolio</h2>
-    <div class="portfolio-entry">
-      <h3>Arcade Cabinet Revamp</h3>
-      <p>Restored 1980s arcade logic boards with full recap, ROM socketing, and trace repair.</p>
-    </div>
-    <div class="portfolio-entry">
-      <h3>Industrial Controller Modernization</h3>
-      <p>Replaced failed components with FPGA simulation and added diagnostics output.</p>
+  <section id="services" class="max-w-4xl mx-auto px-4 py-12 animate-fade-in">
+    <h2 class="text-2xl font-bold mb-6">Our Services</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Diagnostic / Bench Fee</h3>
+        <p>Flat-rate evaluation and troubleshooting of your equipment before repairs begin.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hourly Repair</h3>
+        <p>Repair labor billed hourly after diagnostics, plus cost of parts.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Critical Hardware Tune-Up – $325</h3>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Inspect CPU, driver, sound, power boards</li>
+          <li>Recap up to 10 electrolytics</li>
+          <li>Socket up to 5 chips</li>
+          <li>Corrosion prevention & cleaning</li>
+          <li>Continuity checks</li>
+          <li>Service log included</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Fixed-Fee Modernization</h3>
+        <p>Complex overhauls with FPGAs, milestone-based pricing, and robust documentation.</p>
+      </div>
     </div>
   </section>
 
-  <section id="why">
-    <h2>Why Choose Kryx Labs?</h2>
-    <ul>
+  <section id="portfolio" class="max-w-4xl mx-auto px-4 py-12 animate-fade-in">
+    <h2 class="text-2xl font-bold mb-6">Project Portfolio</h2>
+    <div class="space-y-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-lg font-semibold text-gray-800">Arcade Cabinet Revamp</h3>
+        <p>Restored 1980s arcade logic boards with full recap, ROM socketing, and trace repair.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="text-lg font-semibold text-gray-800">Industrial Controller Modernization</h3>
+        <p>Replaced failed components with FPGA simulation and added diagnostics output.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="max-w-4xl mx-auto px-4 py-12 animate-fade-in">
+    <h2 class="text-2xl font-bold mb-4">Why Choose Kryx Labs?</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-1">
       <li>Low-level expertise in FPGAs and digital logic</li>
       <li>Professional repair logs with every service</li>
       <li>Transparent, small-business-friendly pricing</li>
@@ -81,17 +87,19 @@
     </ul>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact">
-      <p><strong>Email:</strong> <a href="mailto:gabriel.womelsdorf@kryxlabs.com">gabriel.womelsdorf@kryxlabs.com</a></p>
+  <section id="contact" class="max-w-4xl mx-auto px-4 py-12 animate-fade-in">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <div class="bg-white p-6 rounded shadow space-y-2 max-w-xl mx-auto">
+      <p><strong>Email:</strong> <a href="mailto:gabriel.womelsdorf@kryxlabs.com" class="text-blue-600 underline">gabriel.womelsdorf@kryxlabs.com</a></p>
       <p><strong>Phone:</strong> (410) 591-0511</p>
-      <p><strong>Website:</strong> <a href="http://www.kryxlabs.com">www.kryxlabs.com</a></p>
+      <p><strong>Website:</strong> <a href="http://www.kryxlabs.com" class="text-blue-600 underline">www.kryxlabs.com</a></p>
+      <p class="text-sm text-gray-500 mt-4">Feel free to reach out by email or phone with any questions or project inquiries! I'm a current college student and always looking for meaningful work to support local businesses and build experience. Located in Loudoun County — happy to work with fellow locals!</p>
     </div>
   </section>
 
-  <footer>
+  <footer class="bg-gray-900 text-white text-center py-6 animate-fade-in">
     <p>&copy; 2025 Kryx Labs. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
